@@ -1,13 +1,11 @@
 # scroll
 
-## Project setup
+### 启动
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
+### 演示:
 
+![img](https://ws3.sinaimg.cn/large/006tNbRwly1fy67qqdxfkg30gn0jnan4.gif)
