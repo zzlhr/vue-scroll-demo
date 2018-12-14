@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>
-            滚动条最大高度:{{max}} 滚动条当前位置:{{scrollTop}}
+            滚动条最大高度:{{max - childHeight}} 滚动条当前位置:{{scrollTop}} 离底: {{max - scrollTop - childHeight}}
         </p>
         <div ref="hello" class="hello">
             <p v-for="i in 1000" :key="i">{{i}}</p>
@@ -16,6 +16,7 @@
             return {
                 max: 0,
                 scrollTop: 0,
+                childHeight: 0,
             }
         },
         props: {
@@ -30,6 +31,9 @@
         mounted() {
             const max = this.$refs.hello.scrollHeight
             this.$set(this.$data, 'max', max);
+            this.$set(this.$data, 'childHeight', this.$refs.hello.clientHeight);
+
+
             this.$refs.hello.addEventListener('scroll', this.scroll)
         }
     }
