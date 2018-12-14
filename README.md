@@ -8,4 +8,4 @@ npm run serve
 
 ### 演示:
 
-![img](https://ws3.sinaimg.cn/large/006tNbRwly1fy67qqdxfkg30gn0jnan4.gif)
+![img](https://ws1.sinaimg.cn/large/006tNbRwly1fy68a6mkqdg30br0k0gue.gif)
